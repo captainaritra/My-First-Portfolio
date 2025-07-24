@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- TAILWIND CSS & Daisy UI CDN + ETC -->
+    <link rel="stylesheet" href="btn.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <!-- END -->
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <nav class="container">
+        <a href="#home"><div class="logo">Aritra Samanta</div></a>
+
+        <div class="nav_menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project">Project</a></li>
+            <button
+              id="theme-toggle"
+              aria-label="Toggle Theme"
+              class="theme-toggle"
+            >
+              <span class="icon">🌙</span>
+            </button>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+          </ul>
+        </div>
+
+        <!-- Burger Button -->
+        <button id="menu-toggle" class="burger-btn" aria-label="Open menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MAIN SECTION  -->
+    <main class="container">
+      <!-- HERO SECTION  -->
+      <section class="hero_section" id="home">
+        <div class="hero_img">
+          <img src="Assets/hero_image.webp" alt="Heor Image" />
+        </div>
+        <div class="hero_content">
+          <h1 class="hero_title">Code, <span class="italic">refined.</span></h1>
+          <h2 class="hero_subtitle">
+            Engineering solutions for real-world users.
+          </h2>
+          <p class="hero_text">
+            I specialize in crafting reliable, maintainable digital solutions —
+            turning complex requirements into seamless user experiences.
+          </p>
+          <div class="hero_cta">
+            <div class="download_cv_btn">
+              <a href="#">
+                <button class="animated-button">
+                  <svg viewBox="0 0 24 24" class="arr-2">
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                  <span class="text">Download CV</span>
+                  <span class="circle"></span>
+                  <svg
+                    viewBox="0 0 24 24"
+                    class="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                  </svg>
+                </button>
+              </a>
+            </div>
+            <div class="social_icons">
+              <ul>
+                <li>
+                  <a href="https://github.com/captainaritra" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/aritrasamantaofficial"
+                    target="_blank"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://x.com/captainaritra" target="_blank"
+                    ><i class="fa-brands fa-x-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/captainaritra"
+                    target="_blank"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- HERO SECTION END -->
+
+      <!-- ABOUT SECTION  -->
+      <section class="about_section" id="about">
+        <div class="about_me">
+          <h2>About</h2>
+          <p>
+            A developer who believes that code is just another form of
+            creativity. I love shaping ideas into interactive, beautiful
+            websites, blending logic with design. From a blinking cursor to a
+            full-blown experience, I enjoy every step of the process.
+          </p>
+        </div>
+        <div class="about_tabs">
+          <div class="tabs tabs-box">
+            <input
+              type="radio"
+              name="my_tabs_6"
+              class="tab"
+              aria-label="Skills"
+              checked="checked"
+            />
+            <div class="tab-content">
+              <div class="skill_icons">
+                <span><i class="devicon-html5-plain colored"></i>HTML</span>
+                <span><i class="devicon-css3-plain colored"></i>CSS</span>
+                <span
+                  ><i class="devicon-javascript-plain colored"></i
+                  >JavaScript</span
+                >
+                <span><i class="devicon-react-original colored"></i>React</span>
+              </div>
+            </div>
+
+            <input
+              type="radio"
+              name="my_tabs_6"
+              class="tab"
+              aria-label="Experience"
+            />
+            <div class="tab-content">
+              <div class="experience_data">
+                <div class="experience_cards">
+                  <div class="exp_card">
+                    <div class="job_details">
+                      <h3 class="company_name">TRP Global</h3>
+                      <h5 class="job_duration">May 2024 - Jan 2025</h5>
+                    </div>
+                    <div class="job_data">
+                      <h4 class="job_role">
+                        Junior Software Development Engineer
+                      </h4>
+                      <h5 class="job_desc">
+                        <p>
+                          Took an AI marketing website from idea to launch —
+                          designed the entire layout in Figma, then brought it
+                          to life with HTML, CSS, JS, and Bootstrap.
+                        </p>
+                        <p>
+                          Developed modern UI components that improved user
+                          satisfaction scores by 25%.
+                        </p>
+                        <p>
+                          Improved mobile performance across key pages, boosting
+                          mobile retention by 15%.
+                        </p>
+                      </h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <input
+              type="radio"
+              name="my_tabs_6"
+              class="tab"
+              aria-label="Education"
+            />
+            <div class="tab-content">
+              <div class="education_data">
+                <div class="education_cards">
+                  <div class="edu_card">
+                    <div class="course_details">
+                      <h3 class="course_name">MCA</h3>
+                      <h5 class="course_duration">2024 - 2026 (Expected)</h5>
+                    </div>
+                    <div class="colage_data">
+                      <h4 class="colage_name">Seacom Engineering College</h4>
+                      <h5 class="cgpa" hidden>CGPA:</h5>
+                    </div>
+                  </div>
+                  <div class="edu_card">
+                    <div class="course_details">
+                      <h3 class="course_name">BCA</h3>
+                      <h5 class="course_duration">2021 - 2024</h5>
+                    </div>
+                    <div class="colage_data">
+                      <h4 class="colage_name">Seacom Management College</h4>
+                      <h5 class="cgpa" hidden>CGPA: 8.41</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="certificate_cards" hidden>Your Certificates</div>
+              </div>
+            </div>
+
+            <input
+              type="radio"
+              name="my_tabs_6"
+              class="tab"
+              aria-label="Achievements"
+              hidden
+            />
+            <div class="tab-content" hidden>
+              <div class="education_data">
+                <div class="education_cards">
+                  <div class="edu_card">
+                    <div class="course_details">
+                      <h3 class="course_name">CS50X</h3>
+                      <h5 class="course_duration">2025</h5>
+                    </div>
+                    <div class="colage_data">
+                      <h4 class="colage_name">Harvard University</h4>
+                      <h5 class="cgpa" hidden>CGPA:</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="certificate_cards" hidden>Your Certificates</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT SECTION END -->
+
+      <!-- PROJECT SECTION  -->
+      <section class="projects_section" id="project">
+        <div class="projects_content">
+          <h2>Projects</h2>
+          <p>A glimpse of what I’ve built with code and creativity.</p>
+        </div>
+        <div class="project_grid">
+          <div class="project_card">
+            <div class="project_img">
+              <a href="">
+                <img
+                  src="https://images.unsplash.com/photo-1607706189992-eae578626c86?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="project_content">
+              <div class="project_title">
+                <h3>Project Title</h3>
+                <a href="" class="github_link">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <p class="project_desc">
+                A short description of what this project is about.
+              </p>
+              <div class="project_link">
+                <a href="" class="live_link">Live </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_img">
+              <a href="">
+                <img
+                  src="https://plus.unsplash.com/premium_photo-1663100722417-6e36673fe0ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="project_content">
+              <div class="project_title">
+                <h3>Project Title</h3>
+                <a href="" class="github_link">
+                  <i class="fab fa-github fa-xl"></i>
+                </a>
+              </div>
+              <p class="project_desc">
+                A short description of what this project is about.
+              </p>
+              <div class="project_link">
+                <a href="" class="live_link">Live </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_img">
+              <a href="">
+                <img
+                  src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1172&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="project_content">
+              <div class="project_title">
+                <h3>Project Title</h3>
+                <a href="" class="github_link">
+                  <i class="fab fa-github fa-xl"></i>
+                </a>
+              </div>
+              <p class="project_desc">
+                A short description of what this project is about.
+              </p>
+              <div class="project_link">
+                <a href="" class="live_link">Live </a>
+              </div>
+            </div>
+          </div>
+          <div class="project_card">
+            <div class="project_img">
+              <a href="">
+                <img
+                  src="https://images.unsplash.com/photo-1628258334105-2a0b3d6efee1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="project_content">
+              <div class="project_title">
+                <h3>Project Title</h3>
+                <a href="" class="github_link">
+                  <i class="fab fa-github fa-xl"></i>
+                </a>
+              </div>
+              <p class="project_desc">
+                A short description of what this project is about.
+              </p>
+              <div class="project_link">
+                <a href="" class="live_link">Live </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- PROJECT SECTION END -->
+    </main>
+    <!-- MAIN SECTION END  -->
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer_content container">
+        <p class="footer_name italic">Bye Bye 👋</p>
+        <p class="footer_copy">
+          &copy; 2025 Aritra Samanta. All rights reserved.
+        </p>
+        <div class="footer_lnks">
+          <ul>
+            <li>
+              <a href="https://github.com/captainaritra" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/aritrasamantaofficial"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://x.com/captainaritra" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/captainaritra" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <!-- JAVASCRIPT SCRIPT  -->
+    <script src="script.js"></script>
+  </body>
+</html>

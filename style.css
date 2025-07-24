@@ -584,6 +584,12 @@ nav {
   .logo {
     font-size: 2rem;
   }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem !important;
+  }
 
   .nav_menu ul li {
     font-size: 1.2rem;

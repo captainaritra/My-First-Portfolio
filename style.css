@@ -759,7 +759,9 @@ nav {
   .job_details {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
   }
 
   .course_name,
